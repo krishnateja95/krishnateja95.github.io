@@ -39,26 +39,25 @@
     
     
     <h2>Research Experience (ISU)</h2>    
-<p style="font-size:100%;" align="justify">My research involves optimization (compression) of DNNs for efficient inference on hardware. My research projects are as follows: </p>
+<p style="font-size:100%;" align="justify">My research involves optimization (Pruning, Quantization, Neural Architecture Search) of Deep Neural Networks for efficient inference on hardware. My research projects are as follows: </p>
     
-    1) Designed a Pruning algorithm and an Hyper-parameter tuning method for CNN, MLP networks which are dependent on the dimensions of a systolic array. The goal of the developed techniques is to minimize the number of computation cycles of DNN forward pass on a systolic array based Neural Network accelerator (Similar to Google’s TPU and MIT's Eyeriss).  
+    1) <p><strong>Array Aware Training/Pruning:</strong></p> Designed an Hyper-parameter tuning method and a Pruning algorithm for CNN, Dense networks which are dependent on the dimensions of a systolic array. The goal of the developed techniques is to minimize the number of processing cycles of DNN forward pass on a systolic array based Neural Network accelerator; similar to Google’s TPU and MIT's Eyeriss (Paper in <a href="https://asap2020.cs.manchester.ac.uk/program.php" target="_blank">ASAP ’20 Conference</a>).  
   
     
     </br>
     </br>
     
-    2) Studying Structural Faults and Pruning model on Faulty DNN Hardware: Examined the impact of row and column faults on a systolic array on the performance of DNNs and proposed mitigation strategies. Our results found that even one column can degrade the accuracy of the network significantly compared to a single row fault (Presented a <a href="../files/ASAP_2019_Poster.pdf" target="_blank">short version</a> at <a href="https://asap2019.csl.cornell.edu/" target="_blank">ASAP ’19</a>).
+    2) <p><strong>Model Compression on Faulty DNN Accelerator:</strong></p> Examined the impact of row and column faults on a systolic array on the performance of DNNs and proposed mitigation strategies. Our results found that even one column can degrade the accuracy of the network significantly compared to a single row fault (Presented a <a href="../files/ASAP_2019_Poster.pdf" target="_blank">short version</a> at <a href="https://asap2019.csl.cornell.edu/program.html" target="_blank">ASAP ’19</a>).
     
-    
-    
-    
-    
-    
+  <!--Studying Structural Faults and Pruning model on Faulty DNN Hardware: -->
+  
     </br>
     </br>
     
-    3) Current Project: Developing a symmetric Pruning and a uniform Quantization algorithm to compress the Neural Networks to match the SIMD nature of GPU for achieving high speedup during inference.
-    
+    3) <p><strong>Layer Fusion Perspective of Model Compression:</strong></p> Developed a symmetric Pruning and a uniform Quantization algorithm to compress the Neural Networks for efficient infernce on CPU and GPU devices along with stuyding layer fusion aspect of model compression.
+  
+<!--Studied the layer fusion ato match the SIMD nature of GPU for achieving high speedup during inference.-->
+
  </br>
     </br>
     
