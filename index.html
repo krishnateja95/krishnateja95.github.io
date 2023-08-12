@@ -223,11 +223,23 @@ Email: schittyvenkata AT anl DOT gov<br /><br />
   for every layer of the pretrained model, such as ResNet50 which outperformed the manually designed Integer 8 ResNet50 network in terms of accuracy and
   latency. We extended the MSPS method and designed the “Architecture, Sparsity, and Precision Search” (ASPS) algorithm to find better model hyperparameters, matrix type,
   and precision in a single loop. The search method outperforms the manually tuned and automatically designed MSPS models on the ImageNet dataset. 
-  The best ASPS model is 1.1x faster and 0.57% more accurate than the baseline sparse-only Integer 8 ResNet50 model [<a href="https://dl.acm.org/doi/10.1145/3502181.3531463" target="_blank">Paper</a>] </big>
+  The best ASPS model is 1.1x faster and 0.57% more accurate than the baseline sparse-only Integer 8 ResNet50 model [<a href="https://dl.acm.org/doi/10.1145/3502181.3531463" target="_blank">Paper</a>] 
+   
+   </big>
+     </li> </br>
 
+<li>
+We designed “Array Aware Neural Architecture Search” (AANAS) method to automatically design efficient CNNs for a 
+  fixed array-based neural network accelerator. The previous Hardware-Aware Neural Architecture Search (HW-NAS) methods consider a fixed search
+  space for different hardware platforms and search within its predefined space. We designed the search space based on the underlying hardware array dimensions
+  to search for efficient CNN architectures for optimal inference performance.  [<a href="https://ieeexplore.ieee.org/document/9516612" target="_blank">Paper</a>] 
+ </big>
      </li> </br>
 
 
+
+
+  
 
 <li>
     <big> We conducted an in-depth and state-of-the-art review of several Hardware-aware Neural Architecture Search (NAS) algorithms for MCU, CPU (mobile and desktop), GPU (Edge and server-level),
