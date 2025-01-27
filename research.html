@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>Krishna Teja Chitty-Venkata</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="google-site-verification" content="bvU_3gV46p13msPzzG_mKlpNbPjmUh_5VrMPJbGs9ls" />
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            
+<li class="nav-item">
+  <a class="nav-link" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="industry.html">Professional Experience</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="research.html">Research Experience</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="resume.html">Curriculum Vitae</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="fun.html">Gallery</a>
+</li>   
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+        <h1 class="text-center">Research Experience (2017 - Current)</h1>
+    <hr>
+
+<!-- <h3>Argonne National Laboratory</h3> -->
+    
+<h3><img src="files/argonnelogo.jpg" alt="Argonne Logo" style="height: 1.4em; vertical-align: middle;">&nbsp;&nbsp;Argonne National Laboratory</h3>    
+    
+<!-- <h5>&nbsp;&nbsp;&nbsp;Postdoctoral Researcher</h5>
+<h5>&nbsp;&nbsp;&nbsp;August 2023 - Present</h5>
+<h5>&nbsp;&nbsp;&nbsp;Supervisor: Murali Emani</h5>
+     -->
+
+<ul>
+
+<li>Postdoctoral Researcher, August 2023 - Present</li>
+<li>Supervisors: Murali Emani and Venkatram Vishwanath</li>
+
+<li>My contributions are as follows:</li>    
+
+    <ul>
+        
+    <li><strong>LangVision-LoRA-NAS</strong></li>
+        <ul>
+        <li>Developed a framework to integrate Neural Architecture Search (NAS) with LoRA to optimize Vision Language Models for variable-rank adaptation</li>
+        <li>Developed a one-shot gradient-based search method leveraging weight sharing for LoRA adapters </li>  
+        <li>Extensive experiments of LangVision-LoRA-NAS on LLaMA-3.2-11B-Vision-Instruct model demonstrated reduction in LoRA parameters across diverse open-source downstream datasets, with negligible loss in perplexity </li>
+            
+            
+            
+        </ul>
+<br>
+    <li><strong>Paged Compression</strong></li>
+        <ul>
+        <li>We develop Paged Compression, a novel block-wise structured KV cache eviction method to enhance the efficiency of vLLM's PagedAttention mechanism</li>
+            <li>The goal of the method is to evict equal number of tokens in each KV Cache block to preserve the integrity of vLLM's block structure after eviction</li>
+            <li>Proposed a proxy score as a substitute for the cumulative attention score, which is derived solely from the accumulated static KV cache, eliminating the need for maintaining a running sum </li>
+            <li>Demonstrate the effectiveness of the proposed approach on the LongBench benchmark suite, utilizing the LLaMA-3.1-8B model </li>
+        </ul>
+<br>    
+    <li><strong>LLM-Inference-Bench</strong></li>
+        <ul>
+        
+            
+
+            <li>Developed LLM-Inference-Bench, a comprehensive benchmarking suite to evaluate the hardware inference performance of LLMs</li>
+            
+
+            <li>Analyzed diverse hardware platforms, including GPUs from Nvidia and AMD and specialized AI accelerators, Intel Habana and SambaNova</li>
+
+            <li>Our evaluation includes several LLM inference frameworks (vLLM, TensorRT-LLM, llama.cpp, Deepspeed-MII) and models from LLaMA, Mistral, and Qwen families with 7B and 70B parameters</li>
+
+            <li>Our benchmarking results reveal the strengths and limitations of various models, hardware platforms, and inference frameworks</li>
+
+            <li>Provided an interactive dashboard to help identify configurations for optimal performance for a given hardware platform</li>
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+<br>
+    <li><strong>WActiGrad Pruning</strong></li>
+        <ul>
+            <li>Developed a structured pruning algorithm, Weight Activation and Gradient (WActiGrad), to obtain smaller LLMs from large pre-trained models</li>
+            <li>Investigated the effects of different pruning granularity and identified the challenges in applying these techniques across different parts of the transformer</li> 
+            
+            <li>Applied WActiGrad method on LLaMA (7B and 13B), LLaMA-2 (7B and 13B), and Mistral-7B models across several language benchmarks</li> 
+            
+            <li>Our approach can prune close to 20% of the original model size without significantly compromising the model validation accuracy</li>
+                <li>Evaluated the hardware performance of our structurally pruned LLMs on different AI accelerators such as Nvidia A100 GPU, Groq LPU, Cerebras CS-2, and Graphcore Bow systems</li> 
+            
+            
+            
+            
+            
+            
+            
+        </ul>
+    </ul>
+
+</ul>    
+    
+    
+<hr>
+    
+    
+<h3><img src="files/ISU_Logo.png" alt="Iowa State Univeristy Logo" style="height: 1.4em; vertical-align: middle;">&nbsp;&nbsp;Iowa State Univeristy</h3>    
+    
+<ul>
+
+<li>Graduate Research Assistant, August 2017 - August 2023</li>
+<li>Supervisor: Dr. Arun K. Somani</li>
+
+<li>My contributions are as follows:</li>    
+
+    <ul>
+    
+    <li><strong>Accelerator, Architecture and Mixed Precision Quantization Co-Search</strong></li>
+        <ul>
+        <li>Developed a Fast Differentiable Hardware-aware Mixed Precision Quantization Search method to find optimal precision for each weight and activation matrix in a neural network</li>
+        <li>Developed a Joint Differentiable hardware-aware Architecture and Mixed Precision Quantization Co-search to jointly find the neural architecture parameters (kernel and filter size) and precision of each weight and activation tensor</li>
+        <li>Developed a Joint Accelerator, Architecture, and Precision triple co-search to find most optimal combination of accelerator size, precision and neural architecture size</li> 
+        <li>Demonstrated the effectiveness of our proposed methods targeting Bitfusion accelerator by searching mixed precision models on MobilenetV2 model</li>
+        <li>Achieved better accuracy and latency trade-off models than the manually designed and previously proposed search methods</li>
+        </ul>
+    
+    <br>    
+     <li><strong>ConVision Benchmark</strong></li>
+        <ul>
+            <li>Developed ConVision Benchmark, a comprehensive and highly-scalable  PyTorch framework to standardize the implementation and
+            evaluation of state-of-the-art CNN and ViT models</li>
+        
+            <li>Implemented the following CNN model families: AlexNet, ConvNext, DenseNet, EfficientNet, GhostNet, Inception, MNASNet,
+            Mobilenet, NFNet, RegNet, ResNet, Shufflenet, Squeezenet, Vgg</li>
+        
+            <li>Implemented the following ViT model families: BoTNet, CCT, CaiT, CrossFormer, CrossViT, CvT, DeepViT, EdgeNeXt,
+                Efficientformer, FocalTransformer, GC-ViT, LVT, LeViT, MLP-Mixer, Max-ViT, MobileFormer, PVT, PiT, PoolFormer, Region-ViT,
+                SepViT, Swin, T2T, TNT, Twins, VAN</li>
+            
+            <li>Our methodology includes rigorous performance evaluations, highlighting metrics such as accuracy, precision, recall, 
+                F1 score, and computational efficiency (FLOPs, MACs, CPU, and GPU latency).</li>
+        
+        </ul>
+        <br>
+    <li><strong>Array Aware Neural Architecture Search</strong></li>
+        <ul>
+            <li>Designed Neural Architecture Search method to automatically design efficient CNNs for a fixed-size systolic-array neural 
+                network accelerator</li>
+            <li>The novel contribution include designing the CNN search space based on the underlying hardware array dimension for optimal
+                hardware performance</li>
+            <li>The proposed NAS methods on the CIFAR-10 dataset produced similar accuracy as the baseline models while saving a 
+                substantial number of cycles on the systolic array </li>
+        </ul>
+    <br>
+    <li><strong>Hardware Dimension Aware Pruning</strong> (HDAP)</li>
+        <ul>
+            <li>Developed HDAP method, speecific to systolic array-based accelerators, multi-core CPUs, and Tensor Core GPUs, which considers the underlying dimension of the hardware for pruning</li> 
+            <li>Our HDAP algorithm prunes number of nodes/filters in each layer based on the size of the underlying hardware in every pruning iteration</li>
+            <li>Our method Achieved an average speedup of 3.2x on Turing Tensor Cores, whereas the baseline achieves only 1.5x on CNN benchmarks</li>
+            <li>Our HDAP method attains an average speedup of 4.2x on the selected CNN benchmarks on the Eyeriss accelerator, whereas the baseline method attains only 1.6x</li>
+            
+        </ul>
+<br>
+    
+    <li><strong>Fault based and Array size based Pruning</strong></li>
+        <ul>
+            
+        <li>Developed Fault and Array size based Pruning (FPAP) algorithm, a co-deign method to bypass faults and remove the 
+            internal redundancy concurrently for efficient inference</li>
+        <li>Compared our method with different pruning methods under different fault scenarios (random, row and column faults) 
+            and array sizes</li>
+        <li>Our method achieved a mean speedup of 4.2x, where the baselines achieved 1.6x on ConvNet, NiN, AlexNet, and VGG16 models over
+            Eyeriss under random faults</li>
+        
+        </ul>
+<br>
+<!--     <li><strong>Survey Papers</strong></li>
+        <ul>
+        <li>Description</li>
+        </ul> -->
+
+    </ul>
+    
+</ul>    
+    
+    
+    
+<hr>    
+    
+    <h3><img src="files/argonnelogo.jpg" alt="Argonne Logo" style="height: 1.4em; vertical-align: middle;">&nbsp;&nbsp;Argonne National Laboratory</h3>
+
+    
+    
+<ul>
+
+<li>Research Intern, September 2021 - November 2021</li>
+<li>Supervisors: Murali Emani and Venkatram Vishwanath</li>
+
+<li><strong>Project Title:</strong> Searching Sparse and Mixed Precision Quantized Neural Networks for A100 Tensor Cores</li>    
+    <ul>
+    
+        <li>Developed Mixed Sparse and Precision Search (MSPS) method to search for the optimal weight matrix type (sparse or dense) 
+            and precision combination for every layer of the pretrained model, such as ResNet50</li> 
+        <li>The MSPS method outperformed the manually designed Int8 ResNet50 network in terms of accuracy and latency </li>
+        <li>Extended the MSPS method and developed the Architecture, Sparsity, and Precision Search (ASPS) algorithm to find better 
+            model hyperparameters, matrix type, and precision in a single loop</li>
+        <li>The best ASPS model is 1.1x faster and 0.57% more accurate than the baseline sparse-only Integer 8 ResNet50 model</li>
+    
+    
+    </ul>
+    
+</ul>    
+    
+<hr>   
+    
+    
+<h3><img src="files/intel.png" alt="Intel Logo" style="height: 1.4em; vertical-align: middle;">&nbsp;&nbsp;Intel Corporation</h3>    
+    
+    
+<!-- <h5>&nbsp;&nbsp;&nbsp;Deep Learning Research Intern</h5>
+<h5>&nbsp;&nbsp;&nbsp;June 2020 - December 2020</h5>
+<h5>&nbsp;&nbsp;&nbsp;Supervisor: Sreeni Kothandaraman</h5>
+
+     -->
+<ul>
+
+<li>Deep Learning Research Intern, June 2020 - December 2020</li>
+<li>Supervisor: Sreeni Kothandaraman</li>
+<li><strong>Project Title:</strong> Searching Architecture and Precision for U-net based Image Restoration Tasks
+    <ul>
+    <li>Designed a Weight sharing Neural Architecture Search method to optimize Unet CNN architecture for image restoration tasks, specifically Super Resolution and Denoising</li>
+    <li>Designed Operation Search to identify optimal sequences of operations (convolutions and pooling) within the U-net model, focusing on both Down and Up sampling operations</li>    
+    <li>Conducted experiments using the DIV2K and BSD400 datasets for Super Resolution and Denoising tasks, respectively</li>
+    <li>The searhched Unet model outperformed the baseline Unet model and the mixed precision Unet model achieves better PSNR than uniform quantization</li>
+    </ul>
+    
+</ul>    
+    
+<hr>
+    
+<!-- <h3>Advanced Micro Devices (AMD)</h3> -->
+    
+<h3><img src="files/AMD_logo.jpg" alt="Argonne Logo" style="height: 1em; vertical-align: middle;">&nbsp;&nbsp;Advanced Micro Devices</h3>    
+    
+    
+<h5>&nbsp;&nbsp;&nbsp;Deep Learning Intern</h5>
+<h5>&nbsp;&nbsp;&nbsp;May 2019 - August 2019</h5>
+<h5>&nbsp;&nbsp;&nbsp;Supervisor: Mike Vermeulen</h5>
+    
+<ul>
+<!-- <li>Designed</li> -->
+<ul>
+</ul>
+</ul>
+    
+<hr>    
+    
+    
+    
+  <br>
+
+  <p hidden><a href="https://clustrmaps.com/site/1bx3z" title="Visit tracker"><img
+        src="//www.clustrmaps.com/map_v2.png?d=SqXwaq_frK5Sfzq0mXTKs3sZMvyrsDy_IezSBgT1oEo&cl=ffffff" /></a></p>
+
+</body>
+
+</html>
