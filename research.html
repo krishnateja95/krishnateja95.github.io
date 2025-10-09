@@ -33,6 +33,12 @@
 <li class="nav-item">
   <a class="nav-link active" aria-current="page" href="research.html">Research Experience</a>
 </li>
+
+<li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+
+
 <li class="nav-item">
   <a class="nav-link" href="resume.html">Curriculum Vitae</a>
 </li>
@@ -59,26 +65,21 @@
 
 <ul>
 
-<li>Postdoctoral Researcher, August 2023 - Present</li>
+<li>Postdoctoral Researcher, August 2023 - October 2025</li>
 <li>Supervisors: Murali Emani and Venkatram Vishwanath</li>
 
 <li>My contributions are as follows:</li>    
-
     <ul>
-        
     <li><strong>LangVision-LoRA-NAS</strong></li>
         <ul>
         <li>Developed a framework to integrate Neural Architecture Search (NAS) with LoRA to optimize Vision Language Models for variable-rank adaptation</li>
         <li>Developed a one-shot gradient-based search method leveraging weight sharing for LoRA adapters </li>  
         <li>Extensive experiments of LangVision-LoRA-NAS on LLaMA-3.2-11B-Vision-Instruct model demonstrated reduction in LoRA parameters across diverse open-source downstream datasets, with negligible loss in perplexity </li>
-            
-            
-            
         </ul>
 <br>
-    <li><strong>Paged Compression</strong></li>
+    <li><strong>PagedEviction</strong></li>
         <ul>
-        <li>We develop Paged Compression, a novel block-wise structured KV cache eviction method to enhance the efficiency of vLLM's PagedAttention mechanism</li>
+        <li>Developed PagedEviction, a novel block-wise structured KV cache eviction method to enhance the efficiency of vLLM's PagedAttention mechanism</li>
             <li>The goal of the method is to evict equal number of tokens in each KV Cache block to preserve the integrity of vLLM's block structure after eviction</li>
             <li>Proposed a proxy score as a substitute for the cumulative attention score, which is derived solely from the accumulated static KV cache, eliminating the need for maintaining a running sum </li>
             <li>Demonstrate the effectiveness of the proposed approach on the LongBench benchmark suite, utilizing the LLaMA-3.1-8B model </li>
@@ -86,47 +87,22 @@
 <br>    
     <li><strong>LLM-Inference-Bench</strong></li>
         <ul>
-        
-            
-
             <li>Developed LLM-Inference-Bench, a comprehensive benchmarking suite to evaluate the hardware inference performance of LLMs</li>
-            
-
             <li>Analyzed diverse hardware platforms, including GPUs from Nvidia and AMD and specialized AI accelerators, Intel Habana and SambaNova</li>
-
             <li>Our evaluation includes several LLM inference frameworks (vLLM, TensorRT-LLM, llama.cpp, Deepspeed-MII) and models from LLaMA, Mistral, and Qwen families with 7B and 70B parameters</li>
-
             <li>Our benchmarking results reveal the strengths and limitations of various models, hardware platforms, and inference frameworks</li>
-
             <li>Provided an interactive dashboard to help identify configurations for optimal performance for a given hardware platform</li>
-            
-            
-            
-            
-            
-            
-            
         </ul>
 <br>
     <li><strong>WActiGrad Pruning</strong></li>
         <ul>
             <li>Developed a structured pruning algorithm, Weight Activation and Gradient (WActiGrad), to obtain smaller LLMs from large pre-trained models</li>
             <li>Investigated the effects of different pruning granularity and identified the challenges in applying these techniques across different parts of the transformer</li> 
-            
             <li>Applied WActiGrad method on LLaMA (7B and 13B), LLaMA-2 (7B and 13B), and Mistral-7B models across several language benchmarks</li> 
-            
             <li>Our approach can prune close to 20% of the original model size without significantly compromising the model validation accuracy</li>
-                <li>Evaluated the hardware performance of our structurally pruned LLMs on different AI accelerators such as Nvidia A100 GPU, Groq LPU, Cerebras CS-2, and Graphcore Bow systems</li> 
-            
-            
-            
-            
-            
-            
-            
+            <li>Evaluated the hardware performance of our structurally pruned LLMs on different AI accelerators such as Nvidia A100 GPU, Groq LPU, Cerebras CS-2, and Graphcore Bow systems</li> 
         </ul>
     </ul>
-
 </ul>    
     
     
